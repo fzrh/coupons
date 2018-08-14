@@ -15,7 +15,7 @@ class SetupCoupons < ActiveRecord::Migration[5.2]
       when 'Mysql2'
         t.text :attachments
       else
-        t.text :attachments, null: false, default: '{}'
+        t.text :attachments, null: true, default: '{}'
       end
     end
 
